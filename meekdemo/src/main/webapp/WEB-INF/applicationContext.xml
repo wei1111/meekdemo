@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<beans xmlns="http://www.springframework.org/schema/beans">-->
+       <!--&lt;!&ndash;xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&ndash;&gt;-->
+       <!--&lt;!&ndash;xmlns:util="http://www.springframework.org/schema/util"&ndash;&gt;-->
+       <!--&lt;!&ndash;xmlns:configurator="http://cocoon.apache.org/schema/configurator"&ndash;&gt;-->
+       <!--&lt;!&ndash;xmlns:avalon="http://cocoon.apache.org/schema/avalon"&ndash;&gt;-->
+       <!--&lt;!&ndash;xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd&ndash;&gt;-->
+                           <!--&lt;!&ndash;http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd&ndash;&gt;-->
+                           <!--&lt;!&ndash;http://cocoon.apache.org/schema/configurator http://cocoon.apache.org/schema/configurator/cocoon-configurator-1.0.1.xsd&ndash;&gt;-->
+                           <!--&lt;!&ndash;http://cocoon.apache.org/schema/avalon http://cocoon.apache.org/schema/avalon/cocoon-avalon-1.0.xsd">&ndash;&gt;-->
+
+  <!--&lt;!&ndash; Activate Cocoon Spring Configurator &ndash;&gt;-->
+  <!--<configurator:settings/>-->
+
+  <!--&lt;!&ndash; Configure Log4j &ndash;&gt;-->
+  <!--<bean name="org.apache.cocoon.spring.configurator.log4j"-->
+        <!--class="org.apache.cocoon.spring.configurator.log4j.Log4JConfigurator"-->
+        <!--scope="singleton">-->
+    <!--<property name="settings" ref="org.apache.cocoon.configuration.Settings"/>-->
+    <!--<property name="resource" value="/WEB-INF/log4j.xml"/>-->
+  <!--</bean>-->
+
+<beans>
+</beans>
