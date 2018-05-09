@@ -18,11 +18,6 @@ public class StudentServiceImpl implements StudentService {
 	@Autowired
 	StudentDao studentDao;
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see cn.itcast.service.StudentService#findPage(cn.itcast.pagination.Page)
-	 */
 	@Override
 	public List<Student> findPage(Page page) {
 		// TODO Auto-generated method stub
