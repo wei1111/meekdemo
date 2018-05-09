@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<!-- 注意configuration中的配置是有顺序的 -->
+
+	<settings>
+		<!-- 打开延迟加载的开关 -->
+		<setting name="lazyLoadingEnabled" value="true" />
+		<!-- 将积极加载改为消极加载，即延迟加载 -->
+		<setting name="aggressiveLazyLoading" value="false" />
+		<!-- 开启二级缓存 -->
+		<setting name="cacheEnabled" value="true" />
+	</settings>
+
+	<!-- 别名 -->
+
+	<!-- 批量别名定义(这个常用) 指定一个包名，mybatis会自动的扫描包中po类，自动定义别名，别名就是类名（首字母大写或小写都可以） -->
+	<typeAliases>
+		<!-- 单个定义别名 type：类型的路径； alias：别名 -->
+		<!-- <typeAlias type="cn.domain.User" alias="User" /> -->
+		<!-- 批量定义别名 -->
+		<package name="njupt/domain" />
+	</typeAliases>
+
+	<!-- 配置分页插件 -->
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageHelper">
+			<!-- 设置数据库类型 Oracle,Mysql,MariaDB,SQLite,Hsqldb,PostgreSQL六种数据库 -->
+			<property name="dialect" value="mysql" />
+		</plugin>
+	</plugins>
+
+	<!-- 加载映射文件 mapper,这里不用写了，在spring的配置文件中会有 -->
+
+</configuration>
